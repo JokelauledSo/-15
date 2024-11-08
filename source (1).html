@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <style>body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: radial-gradient(circle at center, #be0979, #d2186f);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#f6faf0, #4258c2);
+    font-weight: 300;
+}
+.all {
+    display: flex;
+    perspective: 10px;
+    transform: perspective(300px) rotate(20deg);
+    will-change: perspective;
+    perspective-origin: center center;
+    transition: all 1.3s ease-out;
+    justify-content: center;
+    transform-style: preserve-3;
+}
+.all:hover {
+    perspective: 1000px;
+    transition: all 1.3s ease-in;
+    transform: perspective(10000px) rotateX(0deg);
+}
+.all:hover .text {
+    opacity: 1;
+}
+.all:hover > div {
+    opacity: 1;
+    transition-delay: 0s;
+}
+.all:hover .explainer {
+    opacity: 0;
+}
+.left, .center, .right, .lefter, .rihter {
+    width: 200px; 
+    height: 150px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px; solid #fff;
+    box-shadow: 0 0 20px 5px rgba(8, 220, 40, 0.4);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #58d;
+    cursor: pointer;
+    background-blend-mode: color-burn;
+}
+.left:hover, .center:hover, .right:hover, .lefter:hover, .righter:hover {
+    box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+    background-color: rgb(110, 210, 79);
+}
+.text {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    bottom: 0;
+    left: 5px;
+    position: absolute;
+    will-change: transform; color: #ffffff;
+    text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
+}
+.lefter {
+    transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+    background-image: url(https://i.pinimg.com/474x/77/67/b5/7767b5c30367ded12d29ad7e472c51b7.jpg) ; 
+}
+.left {
+    transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+    background-image: url(https://avatars.dzeninfra.ru/get-zen_doc/1244179/pub_5be9e996f68f2e00a91f0bb3_5be9ea2235713d00aa21d09f/scale_1200);
+}
+.center {
+    opacity: 1;
+    background-image: url(https://static.life.ru/posts/2018/08/1145960/d60cfb83d38272fc3d3e631bcc37d25d.jpg
+    );
+}
+.right {
+    transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+    background-image: ;
+}
+.righter {
+    transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+    background-image: url() ;
+}
+.explainer {
+    font-weight: 300;
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 100%;
+    background-color: #249c2c; 
+    background-image: radial-gradient(circle at center top, #cce, 
+    rgb(26, 176, 26));
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+        </head>
+        <body>
+            
+
+
+<title>HTML, CSS and JavaScript demo</title>
+
+<div class="all">
+        <div class="lefter">
+        <div class="text">Jake Gyllenhaal<br>Еврей<br>Актерище<br>У него собака ржака</div>
+        </div>
+<div class="left">
+<div class="text">Alex Turner<br>Музыкант<br>Лучший гитарист<br>Красивая гитара</div>
+</div>
+<div class="center">
+    <div class="explainer"><span>Список крутых перцев</span></div>
+    <div class="text" fronted="" development<="" div="">
+</div>
+<div class="right">
+    <div class="text" backend="" development<="" div="">
+</div>
+<div class="righter">
+    <div class="text">SEO</div>
+</div>
+</div>
+
+<!-- Start your code here -->
+
+<p class="lw">Выбери своего героя</p>
+
+<!-- End your code here -->
+
+
+            <script>// Write JavaScript here</script>
+        
+    
+</div></div></body>
